@@ -4,7 +4,7 @@
 #Script Global Variables
 #the name of the cluster, will also be assigned to the config file (.yaml)
 #Default port for COMM is 9000
-name="INSERT NAME OF CLUSTER"
+name="INSERT NAME OF CLUSTER" 
 elastic_version="INSERT VERSION NUMBER"
 private_host="INSERT INTERNAL IP"
 DockerFilePath="INSERT PATH TO DOCKER FILE"
