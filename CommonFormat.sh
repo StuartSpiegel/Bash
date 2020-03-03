@@ -48,3 +48,6 @@ cat conn.log | zeek-cut service | grep "ssl" | wc -l
 
 #inverse search of ssl Traffic (SSL traffic not over the Standard Port)
 cat conn.log | zeek-cut service | grep -v "ssl" | wc -l
+
+#unique MAC ADDRESSES
+tcpdump -r ~/pcap/exercise-traffic.pcap -nn 'port 68' | awk '$7 == "Request"' | awk '{print $9}' | sort | uniq -c | sort
